@@ -1,0 +1,465 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+/*
+ * Authors: Cameron Palk and Joel Benner
+ * Website: Cognitopia.com
+ * Date: April 2015
+
+
+ */
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    
+    font-family:    'Source Sans Pro', sans-serif;
+    color:            #FFFFFF;
+    overflow-x: hidden;
+}
+
+/*  Header-Menu Bar: 
+    Dimensions: 40px x 100% (Page width)
+    Img Src: 
+*/
+.header {
+    position:  fixed;
+    z-index:     100; /* above everything else */
+    
+    height:     40px;
+    width:      100%;
+    
+    background-color:       #FFFFFF;
+    
+    box-sizing:             border-box;
+        -moz-box-sizing:    border-box;
+        -webkit-box-sizing: border-box;
+    
+    border-bottom-color:    #5E7273;
+    border-bottom-style:    solid;
+    border-bottom-width:    3px;
+}
+    .header_content_wrapper {
+        width:        100%;
+        max-width:   860px;
+        height:       100%;
+        margin-left:  auto;
+        margin-right: auto;
+        overflow:   hidden;
+    }
+        .head_logo {
+            padding-top:    4px;
+            height:        32px;
+            padding-bottom: 2px;
+            padding-right:  0px;
+            padding-left:    2%;
+        }
+        .head_link {
+            text-decoration: none;
+            color:        #5E7273;
+            
+            padding-top:    6px;
+            height:        32px;
+            padding-left:  2%;
+            padding-right: 2%;
+        }
+
+
+/* ----- Classes ----- */
+
+/* TEXT EFFECTS */
+.center     { text-align: center; }
+.xsmall_text{ font-size:    10pt; }
+.small_text { font-size:    12pt; }
+.xcarousel_text { font-size: 13pt; }
+.scarousel_text { font-size: 14pt; }
+.mcarousel_text { font-size: 15pt; }
+.medium_text{ font-size:    16pt; }
+.large_text { font-size:    28pt; }
+.thin_text  { font-weight:   300; }
+.form_text  { font-size:    14pt; }
+.sectionHead{ margin-bottom:30px; 
+              margin-top:   20px; }
+.light_text { opacity:      .7  ; }
+.unselectable {
+    -moz-user-select:       none;
+    -webkit-user-select:    none;
+    -ms-user-select:        none;
+    user-select:            none;
+    
+    -webkit-user-drag:      none;
+    user-drag:              none;
+}
+
+
+/* DISPLAY ELEMS */
+.left_align  { float: left;  }
+.right_align { float: right; }
+.panel {
+    padding-top:        30px; 
+    padding-bottom:     80px; 
+}
+.blue_back { 
+    background-color:   #3F4F4F; 
+    color:              #FFFFFF; 
+}
+.white_back {
+    background-color:   #FFFFFF; 
+    color:              #638483; 
+}
+.page_title {
+    margin-top: 160px;
+}
+.top_space {
+    margin-top: 100px;
+}
+.medium_top_space {
+    margin-top: 40px;   
+}
+.bottom_space {
+    margin-bottom: 50px;   
+}
+
+.default_button {
+    border:     none;
+    outline:    none;
+    cursor:     pointer;
+    cursor:     hand;
+    
+    border-radius: 6px;
+    
+    padding-top:    5px;
+    padding-bottom: 5px;
+    padding-left:  10px;
+    padding-right: 10px;
+    background-color: #DB6945;
+    
+    box-shadow: 3px 3px 0px #A85133;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:         22pt;
+    color:          #FFFFFF;
+    white-space:        pre;
+}
+
+.arrow_image  { width: 8%; min-width: 80px; max-width: 100px; }
+.blue_arrow {
+    background-image: url(images/All/Dark_Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    height: 64px;
+}
+.white_arrow {
+    background-image: url(images/All/Light_Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    height: 64px;
+}
+
+.medium_column, .long_column, .carousel {
+    display:inline-block;
+    position:   relative;
+    vertical-align:  top;
+    overflow-x:   hidden;
+}
+.carousel {
+    width:          100%;
+    padding-bottom: 50px;
+}
+    .carousel_center_image{
+        width:     90%;
+        max-width: 400px;
+    }
+    .carousel_form_wrapper {
+        margin-top:    30px;
+        margin-bottom: 50px;
+    }
+    .product_button {
+        display: inline-block;
+        
+        width: 100%;
+        max-width: 160px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+        border: none;
+        outline: none;
+        cursor: pointer;
+        cursor: hand;
+        
+        height: 32px;
+        border-radius: 5px;
+    }
+        .product_button:active {
+            background-color: #659888;
+            border-color: #659888;
+            color: #FFFFFF;
+            
+        }
+        #picture_planner_button {
+            background-color: #659888;
+            color: #FFFFFF;
+            border: 2px solid #659888;
+        }
+        #goal_guide_button {
+            background-color: #3F4F4F;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+        }
+        #scando_button {
+            background-color: #3F4F4F;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+        }
+        
+    .pane_selection {
+        display: inline-block;
+        height:  14px;
+        width:   14px;
+        
+        border-radius: 50%;
+        border-color:  #DB6944;
+        border-style:  solid;
+        
+        margin-top:   14px;
+        margin-left:  4px;
+        margin-right: 4px;
+    }
+    .carousel_text {
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
+    }
+        .carousel_bullet {
+            text-align:  left;
+            max-width:    70%;
+            margin-left: auto;
+            margin-right:auto;
+        }
+.carousel_left, .carousel_right {
+    max-height: 240px;
+    height:     120px;
+    width:      10%;
+    max-width:  180px;
+    position:   absolute;
+    top:        10%;
+    background-color: #FFFFFF;
+    color:            #DB6944;
+    
+    padding: 10px;
+    overflow: hidden;
+}
+    .carousel_side_title {
+        position: absolute;
+        top: 10%;
+        left:  0;
+        right: 0;
+        margin: auto;
+        text-overflow: ellipsis;
+    }
+    .carousel_side_arrow {
+        position: absolute;
+        bottom: 10%;
+        right:  0;
+        left:   0;
+        margin: auto;
+    }
+
+.carousel_left {
+    left: 0px;
+    border-radius: 0px 30px 30px 0px;
+    
+}
+.carousel_right {
+    right: 0px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.product_content {
+    display: inline-block;
+    
+}
+.right_column_fill, .left_column_fill {
+    width: 40%;
+    padding-right: 20px;
+    padding-left:  20px;
+    min-width: 250px;
+    vertical-align: middle;
+}
+    #product_content_title {
+        max-width: 240px;
+        width: 100%;
+        margin: auto;
+    }
+    .large_product_content_image {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+
+.article {
+    max-width:  700px;
+    
+    margin-top:  50px;;
+    margin-left:  auto;
+    margin-right: auto;
+    
+    background-color: #FFFFFF;
+    color:            #808284;
+}
+.article p {
+       text-indent: 8%;
+}
+    .article_head {
+        margin: 15px;
+        padding-top: 20px;
+        color: #DB6944;
+    }
+    .article_content {
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    .article_emph {
+        text-align: center;
+        font-size: 20pt; 
+        font-style: italic;
+        color: #505050;
+    }
+
+.long_column {
+    width:         235px;
+    height:        375px;
+    padding-right:  25px;
+    padding-left:   25px;
+    margin-top:     40px;
+}
+.medium_column {
+    max-width:     300px;
+    width:           90%;
+    min-height:    400px;
+    
+    padding-right:    2%;
+    padding-left:     2%;
+    padding-bottom:  80px;
+}
+    .column_full_image {
+        width: 100%;
+    }
+    .column_medium_image { 
+        width:          70%;
+        margin-bottom: 40px;
+    }
+    .column_large_image {
+        width: 230px;
+        margin-bottom: 30px;
+        
+        border: 5px solid white;
+        border-radius:      50%;
+    }
+    .column_title {
+        font-size:     22pt;
+    }
+    .column_text {
+        color:      #808284;
+    }
+    .column_button {
+        /* center buttons to bottom of div */
+        position:    absolute;
+        bottom:           4px;
+        left:             0px;
+        right:            0px;
+        margin-left:     auto;
+        margin-right:    auto;
+        width:          100px;
+        font-size:       14pt;
+    }
+
+.width_limit {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+.half_page_width {
+    
+}
+.text_wrapper {
+    width:       90%;
+    max-width: 700px;
+    margin:     auto;
+    text-align: left;
+    color:   #808284;
+    padding-right: 3%;
+    padding-left:  3%;
+}
+
+.blurb_wrapper {
+    padding-top: 16px;
+}
+
+.signup_wrapper {
+    max-width: 650px;
+    width:       90%;
+    margin:     auto;
+    overflow-x: hidden;
+}
+    .form_wrapper {
+        width:          90%;
+        max-width:     350px;
+        margin:         auto;
+        margin-top:     20px;
+    }
+        .input_title {
+            margin-top: 40px;
+            width:       80%;
+            text-align: left;
+        }
+        .input {
+            border:  none;
+            outline: none;
+            overflow: hidden;
+            
+            width:         100%;
+            border-radius:  6px;
+            
+            padding-top:    3px;
+            padding-bottom: 3px;
+
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size:    13pt;
+            font-style: italic;
+            color:     #808284;
+            background-color: #EEEEEE;
+            text-indent: 10px;
+        }
+    .form_submit {
+        padding-top:    50px;
+        padding-bottom: 50px;
+    }
+
+/* ----- Individual Panel Work ----- */
+/* Home Page */
+#panel_one {
+    min-height: 320px;
+        
+}
+    #text_popup {
+        min-height: 200px;
+    }
+        #LearnHowButton {
+            margin-top: 10px;
+        }
+
+#picture_planner_top { display: block; }
+#goal_guide_top      { display: none;  }
+#scando_top          { display: none;  }
+
+#picture_planner_mid { display: block; }
+#goal_guide_mid      { display: none;  }
+#scando_mid          { display: none;  }
